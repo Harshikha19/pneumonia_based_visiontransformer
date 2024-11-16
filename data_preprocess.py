@@ -24,7 +24,7 @@ rowsRest = df[~df['label'].isin(['No Finding', 'Infiltration'])]
 
 
 # Combine dataframes and shuffle randomly
-df_downsampled = rowsRest.append(
+df_downsampled = rowsRest._append(
     [rowsNoFinding, rowsInfilt]).sample(frac=1, random_state=123)
 
 df_downsampled['label'].value_counts()
