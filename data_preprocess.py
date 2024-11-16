@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Clean the labels
-LABEL_PATH = 'Data_Entry_2017.csv'
+LABEL_PATH = '/kaggle/input/data/Data_Entry_2017.csv'
 
 # Read csv file into dataframe
 df = pd.read_csv(LABEL_PATH, dtype=str)
